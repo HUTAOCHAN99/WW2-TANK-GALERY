@@ -1,9 +1,15 @@
+/* import font dari lokal */
+@font-face {
+  font-family: 'Armalite';
+  src: url("./resourche/font/armalite.ttf");
+}
+
 body {
   background-image: url("./resourche/img/backgorund/bg-image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: Arial, sans-serif;
+  font-family: 'Armalite',Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,11 +20,39 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+.Header{
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:80%;
+  margin: 0 auto;
+}
 
-.judul {
-  font-size: 24px;
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
   color: #fff;
-  text-align: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+}
+
+.about-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+.about-link:hover {
+  color: rgb(151, 151, 151);
 }
 
 .carousel {
@@ -75,7 +109,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
+  font-size: 12px;
   width: 45%;
 }
 
